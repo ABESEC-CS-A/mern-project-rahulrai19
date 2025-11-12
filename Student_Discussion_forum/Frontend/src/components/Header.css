@@ -1,0 +1,31 @@
+.header{
+    background-color: rgb(11, 125, 68);
+    border-radius: 5px;
+    height: 80px;
+    display: flex;
+
+
+}
+.logo{
+    border-radius: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+
+}
+ul{
+    display: flex;
+
+}
+li{
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: antiquewhite;
+}
+li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: large;
+}
