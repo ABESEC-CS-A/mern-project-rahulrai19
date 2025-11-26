@@ -1,31 +1,61 @@
-.header{
-    background-color: rgb(11, 125, 68);
-    border-radius: 5px;
-    height: 80px;
-    display: flex;
-
-
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
 }
-.logo{
-    border-radius: 10px;
-    color: antiquewhite;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
 
+.app-header nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-ul{
-    display: flex;
 
+.app-header a {
+  color: #0f172a;
+  font-weight: 600;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
 }
-li{
-    padding: 10px;
-    text-decoration: none;
-    list-style: none;
-    color: antiquewhite;
+
+.app-header a.active {
+  background: rgba(99, 102, 241, 0.15);
+  color: #4c1d95;
 }
-li a{
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: large;
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.user-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 0.2rem 0.4rem 0.2rem 0.2rem;
+}
+
+.user-pill button {
+  border: none;
+  background: transparent;
+  color: #475569;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .app-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .app-header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
